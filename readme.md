@@ -47,7 +47,7 @@ Install these apps for this app to operate properly:
 ## Beta Feedback
 We welcome feedback on the beta version to improve the app. Please reach out with your comments and suggestions. 
 
-Find my email on my [YouTube channel https://www.youtube.com/@JSyntax](https://www.youtube.com/@JSyntax)  
+Find my email on my [YouTube channel - https://www.youtube.com/@JSyntax](https://www.youtube.com/@JSyntax)  
 
 ## Support me by checking out my other apps
 - [Cycle Now, a bike share app](https://cyclenowapp.com/) 
