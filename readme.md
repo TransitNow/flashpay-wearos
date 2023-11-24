@@ -6,18 +6,17 @@ Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/re
 This app provides Samsung Galaxy Watch 4/5/6 users with a quick method to access Google Wallet and a flashlight app by using the native double-tap shortcut. 
 
 ## Why don't I just bind double-tap top button to Google Wallet?
-Unfortunately, Samsung has restricted their users from binding long-press bottom button to Google Wallet.
-Now, yes, you can simply bind the double-tap top button to Google Wallet, but that means you lose the ability to use the double-tap top button for other things, like flashlight, which is personally a critical feature for me in the night.
+Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double-tap top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
 
-## Why Samsung Pay sucks and why Google Wallet is superior
-- You must enter your PIN/pattern twice: once to unlock the watch, and once to use Samsung Pay, which is a huge pain. Google Wallet only requires you to unlock the watch once so it's way more seamless.
-- It's flaky, sometimes the NFC doesn't work and you need re-open the app and try again. Google Wallet is 100% reliable.
+## Why Samsung Pay sucks compared to Google Wallet
+- Samsung Pay requires entering your PIN twice: first to unlock the watch and then to use the payment feature, which can be frustrating if you forget a step. In contrast, Google Wallet simplifies the process by only needing a single unlock, making transactions smoother.
+- The performance of Samsung Pay can be inconsistent, with occasional NFC issues requiring you to reopen the app and retry. On the other hand, Google Wallet offers a more reliable experience with a 100% success rate.
 
 ## What Flashpay improves on
 - Add haptic feedback whenever you double-tap the top button, so you know when you've successfully triggered the shortcut.
-- Automatically open Google Wallet when you double-tap the top button in bright environments.
-- Automatically open a flashlight app when you double-tap the top button in low light conditions.
-  - Fun fact: Samsung does not allow users to bind the double-tap shortcut to their native Flash. This 3rd party app is more customizable and does not have this restriction.
+- When there's ambient light (enough light to see), it opens Google Wallet.
+- When it's dark, it turns on the flashlight.
+  - Fun fact: Samsung does not allow users to bind the double-tap shortcut to their native flashlight app. Fortunately, the suggested 3rd party flashlight app is more customizable and does not have this restriction.
 - Double-tap twice to open your loyalty cards (e.g. Starbucks, Tim Hortons, etc.) via Stocard.
 
 
