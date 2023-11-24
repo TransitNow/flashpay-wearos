@@ -5,7 +5,7 @@ Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/re
 ## TLDR
 This app provides Samsung Galaxy Watch 4/5/6 users with a quick method to access Google Wallet and a flashlight app by using the native double-tap shortcut. 
 
-## Why don't I just bind double-tap top button to Google Wallet?
+## Why don't I just bind the double-tap top button to Google Wallet?
 Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double-tap top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
 
 ## Why Samsung Pay sucks compared to Google Wallet
@@ -40,12 +40,14 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 ## Wear OS app prerequisites
 Install these apps for this app to operate properly:
 - [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US)
-- [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US)
 - [Wear Flashlight](https://play.google.com/store/apps/details?id=com.codverter.wearflashlight&hl=en_CA&gl=US)
+- [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US) [optional]
 
 
 ## Beta Feedback
-We welcome feedback on the beta version to improve the app. Please reach out with your comments and suggestions.
+We welcome feedback on the beta version to improve the app. Please reach out with your comments and suggestions. 
+
+Find my email on my [YouTube channel https://www.youtube.com/@JSyntax](https://www.youtube.com/@JSyntax)  
 
 ## Support me by checking out my other apps
 - [Cycle Now, a bike share app](https://cyclenowapp.com/) 
