@@ -49,7 +49,7 @@ Install these apps for this app to operate properly:
 We welcome feedback on the beta version to improve the app. Please reach out with your comments and suggestions.
 
 ## Support me by checking out my other apps
-- (Cycle Now (bike share app))[https://cyclenowapp.com/] 
-- (Transit Now (TTC, MBTA, AC Transit bus predictions app))[https://transitnowapp.com/] 
+- [Cycle Now, a bike share app](https://cyclenowapp.com/) 
+- [Transit Now, a TTC, MBTA, AC Transit bus predictions app](https://transitnowapp.com/)
 
 
