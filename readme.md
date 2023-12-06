@@ -26,7 +26,7 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 - Follow the instructions to sideload the Flashpay apk onto your watch.
 
 ### Option 2: via computer
-- Install ADB on your PC or Mac. [Instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/) or use my [quick guide]([url](https://github.com/TransitNow/flashpay-wearos/blob/main/install-adb-quick-guide))
+- Install ADB on your PC or Mac. [Instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/) or use my [quick guide](https://github.com/TransitNow/flashpay-wearos/blob/main/install-adb-quick-guide)
 - Download the Flashpay apk on to your computer.
 - Connect your watch to your computer via USB
   - Enable developer mode on your watch
