@@ -29,7 +29,9 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 - Install ADB on your PC or Mac. [Instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/)
 - Download the Flashpay apk on to your computer.
 - Connect your watch to your computer via USB
-  - Enable developer mode on your watch (tap the build number 7 times)
+  - Enable developer mode on your watch
+      - Tap 'System' -> 'About'.
+      - Scroll to 'Software Version' and tap it 5 times (for Galaxy Watch 4/5/6) until you see a message that you are now a developer.
   - Go to Settings > Developer Options > ADB Debugging
   - Enable ADB Debugging and debug via WIFI
   - First pair your watch using the `adb connect <ip address:port>` command
