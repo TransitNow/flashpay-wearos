@@ -1,5 +1,6 @@
 # Flashpay for Samsung Galaxy Watches
 [![Watch video demo](https://img.youtube.com/vi/Ll-67LgG7G0/0.jpg)]([https://www.youtube.com/watch?v=Ll-67LgG7G0](https://youtu.be/Ll-67LgG7G0))
+[![Video](https://img.youtube.com/vi/Ll-67LgG7G0/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ll-67LgG7G0)
 
 Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/download/v1.0.0/flashpay-wearos-v001.apk)
 
