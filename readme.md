@@ -3,17 +3,17 @@
 Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/download/v1.0.0/flashpay-wearos-v001.apk)
 
 ## TLDR
-This app provides Samsung Galaxy Watch 4/5/6 users with a quick method to access Google Wallet and a flashlight app by using the native double-tap shortcut. 
+This app provides Samsung Galaxy Watch 4/5/6 users with a quick method to access Google Wallet, loyalty cards and a flashlight (in dark scenarios) by using the native double-tap shortcut. 
 
 ## Why don't I just bind the double-tap top button to Google Wallet?
 Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double-tap top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
 
 ## Why Samsung Pay sucks compared to Google Wallet
 - Samsung Pay requires entering your PIN twice: first to unlock the watch and then to use the payment feature, which can be frustrating if you forget a step. In contrast, Google Wallet simplifies the process by only needing a single unlock, making transactions smoother.
-- The performance of Samsung Pay can be inconsistent, with occasional NFC issues requiring you to reopen the app and retry. On the other hand, Google Wallet offers a more reliable experience with a 100% success rate.
+- The performance of Samsung Pay can be inconsistent, with occasional NFC issues requiring you to reopen the app and retry. On the other hand, Google Wallet offers a more reliable experience with a 100% success rate when tapping on NFC terminal.
 
 ## What Flashpay improves on
-- Add haptic feedback whenever you double-tap the top button, so you know when you've successfully triggered the shortcut.
+- Add *haptic feedback* whenever you double-tap the top button, so you know when you've successfully triggered the shortcut.
 - When there's ambient light (enough light to see), it opens Google Wallet.
 - When it's dark, it turns on the flashlight.
   - Fun fact: Samsung does not allow users to bind the double-tap shortcut to their native flashlight app. Fortunately, the suggested 3rd party flashlight app is more customizable and does not have this restriction.
