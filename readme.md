@@ -22,9 +22,15 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 
 
 ## How to install
+### Wear OS app prerequisites
+Install these apps for this app to operate properly:
+- [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US)
+- [Wear Flashlight](https://play.google.com/store/apps/details?id=com.codverter.wearflashlight&hl=en_CA&gl=US)
+- [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US) [optional]
+- 
 ### Option 1: via phone
-- Download the [Wear2 installer](https://www.reddit.com/r/WearOS/comments/u9hf2m/new_app_wear_installer_2_a_free_general_purpose/) app on your phone.
-- Follow the instructions to sideload the Flashpay apk onto your watch.
+- Download the [Wear installer 2](https://www.reddit.com/r/WearOS/comments/u9hf2m/new_app_wear_installer_2_a_free_general_purpose/) app on your phone.
+- Follow their instructions on how to sideload the Flashpay apk onto your watch.
 
 ### Option 2: via computer
 - Install ADB on your PC or Mac. [Instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/) or use my [quick guide](https://github.com/TransitNow/flashpay-wearos/blob/main/install-adb-quick-guide)
@@ -39,12 +45,6 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
   - Then, `adb connect <ip address:port>`
   - Run `adb devices` should show your watch
 - Run `adb install <path to apk>`
-
-## Wear OS app prerequisites
-Install these apps for this app to operate properly:
-- [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US)
-- [Wear Flashlight](https://play.google.com/store/apps/details?id=com.codverter.wearflashlight&hl=en_CA&gl=US)
-- [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US) [optional]
 
 
 ## Beta Feedback
