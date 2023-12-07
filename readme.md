@@ -1,7 +1,7 @@
 # Flashpay for Samsung Galaxy Watches
 [![Video](https://img.youtube.com/vi/qyKzMmxhpaQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
-[Watch the video explainer ](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
-Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/download/v1.0.0/flashpay-wearos-v001.apk)
+- [Watch the video explainer ](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
+- Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/download/v1.0.0/flashpay-wearos-v001.apk)
 
 ## TLDR
 This app provides Samsung Galaxy Watch 4/5/6 users with a quick method to access Google Wallet, loyalty cards and a flashlight (in dark scenarios) by using the native double-tap shortcut. 
