@@ -3,6 +3,7 @@ package com.jsyntax.nowtap
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -94,14 +95,22 @@ class MainActivity : Activity() {
     private fun isTimeForFlashlight(hour: Int): Boolean = hour in 23..24 || hour in 0..6
 
     private fun launchFlashlight() {
-        val intent = Intent(this, FlashlightActivity::class.java)
-        startActivity(intent)
-        finish();
+        val (sharedPreferences, lastTapTime) = getLastTapTime()
+        val currentTime = System.currentTimeMillis()
+
+        if (currentTime - lastTapTime < QUAD_TAP_WINDOW) {
+            launchWallet()
+        } else {
+            val intent = Intent(this, FlashlightActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        updateLastTapTime(sharedPreferences, currentTime)
     }
 
     private fun launchWallet() {
-        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        val lastTapTime = sharedPreferences.getLong(LAST_TAP_TIME_KEY, 0)
+        val (sharedPreferences, lastTapTime) = getLastTapTime()
         val currentTime = System.currentTimeMillis()
 
         if (currentTime - lastTapTime < QUAD_TAP_WINDOW) {
@@ -111,12 +120,25 @@ class MainActivity : Activity() {
             _launchAppWithCheck(REWARDS_APP_PACKAGE)
         } else {
             _launchAppWithCheck(WALLET_PACKAGE)
-
         }
+
+        updateLastTapTime(sharedPreferences, currentTime)
+    }
+
+    private fun updateLastTapTime(
+        sharedPreferences: SharedPreferences,
+        currentTime: Long
+    ) {
         with(sharedPreferences.edit()) {
             putLong(LAST_TAP_TIME_KEY, currentTime)
             apply()
         }
+    }
+
+    private fun getLastTapTime(): Pair<SharedPreferences, Long> {
+        val sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
+        val lastTapTime = sharedPreferences.getLong(LAST_TAP_TIME_KEY, 0)
+        return Pair(sharedPreferences, lastTapTime)
     }
 
     private fun Context._launchAppWithCheck(packageName: String) {
