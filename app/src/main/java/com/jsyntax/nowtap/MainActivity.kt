@@ -2,6 +2,7 @@ package com.jsyntax.nowtap
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -21,10 +22,8 @@ class MainActivity : Activity() {
         // ***********************
         // UPDATE THESE TO YOUR APPS
         // REBUILD APK and INSTALL if you want to customize
-        private const val FLASHLIGHT_PACKAGE = "com.codverter.wearflashlight"
         private const val WALLET_PACKAGE = "com.google.android.apps.walletnfcrel"
         private const val REWARDS_APP_PACKAGE = "de.stocard.stocard"
-        // ***********************
         // ***********************
         // ***********************
 
@@ -95,7 +94,9 @@ class MainActivity : Activity() {
     private fun isTimeForFlashlight(hour: Int): Boolean = hour in 23..24 || hour in 0..6
 
     private fun launchFlashlight() {
-        _launchAppWithCheck(FLASHLIGHT_PACKAGE)
+        val intent = Intent(this, FlashlightActivity::class.java)
+        startActivity(intent)
+        finish();
     }
 
     private fun launchWallet() {
