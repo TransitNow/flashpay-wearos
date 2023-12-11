@@ -77,7 +77,8 @@ class MainActivity : Activity() {
     private fun decideBasedOnBrightnessAndTime(brightness: Float) {
         val isBrightEnough = brightness > LUX_THRESHOLD
         if (isBrightEnough) {
-            launchWallet()
+            Log.d("launchWallet", "decideBasedOnBrightnessAndTime")
+            launchWallet(false)
         } else {
             launchFlashlight()
         }
@@ -88,7 +89,8 @@ class MainActivity : Activity() {
         if (isTimeForFlashlight(currentHour)) {
             launchFlashlight()
         } else {
-            launchWallet()
+            Log.d("launchWallet", "decideBasedOnTimeOnly")
+            launchWallet(false)
         }
     }
 
@@ -99,6 +101,7 @@ class MainActivity : Activity() {
         val currentTime = System.currentTimeMillis()
 
         if (currentTime - lastTapTime < QUAD_TAP_WINDOW) {
+            Log.d("launchWallet", "launchFlashlight")
             launchWallet(true)
         } else {
             val intent = Intent(this, FlashlightActivity::class.java)
@@ -109,16 +112,20 @@ class MainActivity : Activity() {
         updateLastTapTime(sharedPreferences, currentTime)
     }
 
-    private fun launchWallet(forceShowWallet: Boolean = false) {
+    private fun launchWallet(forceShowWallet: Boolean) {
         val (sharedPreferences, lastTapTime) = getLastTapTime()
         val currentTime = System.currentTimeMillis()
 
-        if (currentTime - lastTapTime < QUAD_TAP_WINDOW && !forceShowWallet) {
+        Log.d("launchWallet", "forceShowWallet: $forceShowWallet")
+
+        if ((currentTime - lastTapTime < QUAD_TAP_WINDOW) && !forceShowWallet) {
             lightSensor?.also {
                 sensorManager.unregisterListener(lightSensorListener)
             }
+            Log.d("launchWallet", "opening rewards app")
             _launchAppWithCheck(REWARDS_APP_PACKAGE)
         } else {
+            Log.d("launchWallet", "opening wallet")
             _launchAppWithCheck(WALLET_PACKAGE)
         }
 
