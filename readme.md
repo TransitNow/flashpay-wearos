@@ -27,7 +27,7 @@ Install these apps for this app to operate properly:
 - [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US)
 - [Wear Flashlight](https://play.google.com/store/apps/details?id=com.codverter.wearflashlight&hl=en_CA&gl=US)
 - [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US) [optional]
-- 
+
 ### Option 1: via phone
 - Download the [Wear installer 2](https://www.reddit.com/r/WearOS/comments/u9hf2m/new_app_wear_installer_2_a_free_general_purpose/) app on your phone.
 - Follow their instructions on how to sideload the Flashpay apk onto your watch.
