@@ -99,7 +99,7 @@ class MainActivity : Activity() {
         val currentTime = System.currentTimeMillis()
 
         if (currentTime - lastTapTime < QUAD_TAP_WINDOW) {
-            launchWallet()
+            launchWallet(true)
         } else {
             val intent = Intent(this, FlashlightActivity::class.java)
             startActivity(intent)
@@ -109,11 +109,11 @@ class MainActivity : Activity() {
         updateLastTapTime(sharedPreferences, currentTime)
     }
 
-    private fun launchWallet() {
+    private fun launchWallet(forceShowWallet: Boolean = false) {
         val (sharedPreferences, lastTapTime) = getLastTapTime()
         val currentTime = System.currentTimeMillis()
 
-        if (currentTime - lastTapTime < QUAD_TAP_WINDOW) {
+        if (currentTime - lastTapTime < QUAD_TAP_WINDOW && !forceShowWallet) {
             lightSensor?.also {
                 sensorManager.unregisterListener(lightSensorListener)
             }

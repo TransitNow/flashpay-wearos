@@ -46,6 +46,7 @@ class FlashlightActivity : Activity() {
         super.onPause()
         Log.d("FlashlightActivity", "onPause called; removing callbacks")
         handler.removeCallbacks(autoOffRunnable)
+        finish()
     }
 
     override fun onResume() {
