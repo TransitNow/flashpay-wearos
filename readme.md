@@ -17,7 +17,6 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 - Add *haptic feedback* whenever you double-tap the top button, so you know when you've successfully triggered the shortcut.
 - When there's ambient light (enough light to see), it opens Google Wallet.
 - When it's dark, it turns on the flashlight.
-  - Fun fact: Samsung does not allow users to bind the double-tap shortcut to their native flashlight app. Fortunately, the suggested 3rd party flashlight app is more customizable and does not have this restriction.
 - Double-tap twice to open your loyalty cards (e.g. Starbucks, Tim Hortons, etc.) via Stocard.
 
 
@@ -25,7 +24,6 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 ### Wear OS app prerequisites
 Install these apps for this app to operate properly:
 - [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US)
-- [Wear Flashlight](https://play.google.com/store/apps/details?id=com.codverter.wearflashlight&hl=en_CA&gl=US)
 - [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US) [optional]
 
 ### Option 1: via phone
