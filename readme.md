@@ -15,17 +15,17 @@ This app provides Samsung Galaxy Watch 4/5/6 and TicWatch Pro 5/3 users with a q
 - Assign this app to the double-press tap feature under Settings -> Advanced -> Customize button -> Double press.
 
 ### For TicWatch Pro 3/5 users
-- Press the recent app shortcut (top button for TWP5, bottom button for TWP3), you will be prompted to bind that shortcut to the default recent apps or this app. Select this app. Galaxy Watch users can also use this method to bind the shortcut and save double-press to something else.
+- Press the recent app shortcut (top button for TWP5, bottom button for TWP3), you will be prompted to bind that shortcut to the default recent apps or this app. Select this app. 
 - Long-press the voice shortcut (crown button for TWP5, bottom button for TWP3), if you have multiple voice assistants installed (like Alexa), you will be prompted to select one. Select Google Assistant Go. If you don't have Google Assistant Go 2.8 installed, make sure to [side load it](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/).
-  - Note: I actually prefer to use [Alexa for Wear OS](https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-alexa-for-smart-watches-wear-os/) instead. GAG is a little cumbersome since it was designed for a Phone.
+  - Note: I actually prefer to use [Alexa for Wear OS](https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-alexa-for-smart-watches-wear-os/) instead. Assistant Go is a little cumbersome since it was designed for a Phone. Unfortunately, you cannot sideload the official Assistant apk for Wear OS.
+  - Note: Galaxy Watch users can also use this method to bind the shortcut and save double-press for something else.
  
 
 ## How it works
 - When there's ambient light (enough light to see), it opens Google Wallet.
 - When it's dark, it turns on the flashlight.
 - If you're in a dim environment and using the shortcut once incorrectly brings up the flashlight, you can quickly double press again to open Google Wallet.
-- For TWP3/5 users, you will be presented with an option to bind the long-press bottom button to Google Assistant Go (GAG) for a more seamless experience. 
-  - Unfortuantely, you cannot sideload the official Assistant apk for Wear OS.
+- For TWP3/5 users, you will be presented with an option to bind the long-press voice button to Google Assistant Go (GAG) for a more seamless experience. 
 
 # Why Samsung Pay sucks (a rant to Galaxy Watch users)
 ## Why don't I just bind the double press top button to Google Wallet?
