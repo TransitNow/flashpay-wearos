@@ -2,9 +2,10 @@
 - Bind a physical button to Google Wallet and flashlight depending on the ambient light
 - Adds *haptic feedback* whenever you double press the top button, so you know when you've successfully triggered the shortcut.
 - Allow TWP3/5 users to bind their Voice Assistant (long-press) shortcut to [Google Assistant Go](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/) [optional]
+
 [![Video](https://img.youtube.com/vi/qyKzMmxhpaQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
-- [For Galaxy Watch users](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
-- [For TicWatch Pro 3/5 users](https://youtu.be/lqnD2iWeQBI)
+- [Watch video for Galaxy Watch users](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
+- [Watch video for TicWatch Pro 3/5 users](https://youtu.be/lqnD2iWeQBI)
 - Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/)
 
 ## TLDR
@@ -18,7 +19,7 @@ This app provides Samsung Galaxy Watch 4/5/6 and TicWatch Pro 5/3 users with a q
 - Press the recent app shortcut (top button for TWP5, bottom button for TWP3), you will be prompted to bind that shortcut to the default recent apps or this app. Select this app. 
 - Long-press the voice shortcut (crown button for TWP5, bottom button for TWP3), if you have multiple voice assistants installed (like Alexa), you will be prompted to select one. Select Google Assistant Go. If you don't have Google Assistant Go 2.8 installed, make sure to [side load it](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/).
   - Note: I actually prefer to use [Alexa for Wear OS](https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-alexa-for-smart-watches-wear-os/) instead. Assistant Go is a little cumbersome since it was designed for a Phone. Unfortunately, you cannot sideload the official Assistant apk for Wear OS.
-  - Note: Galaxy Watch users can also use this method to bind the shortcut and save double-press for something else.
+  - Note: Galaxy Watch cannot override the recent apps shortcut, so you will need to use the double press shortcut instead.
  
 
 ## How it works
@@ -51,7 +52,7 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 - Connect your watch to your computer via USB
   - Enable developer mode on your watch
       - Tap 'System' -> 'About'.
-      - Scroll to 'Software Version' and tap it 5 times (for Galaxy Watch 4/5/6) until you see a message that you are now a developer.
+      - Scroll to 'Software Version' and tap it 5 times (for Galaxy Watch) until you see a message that you are now a developer.
   - Go to Settings > Developer Options > ADB Debugging
   - Enable ADB Debugging and debug via WIFI
   - First pair your watch using the `adb connect <ip address:port>` command
