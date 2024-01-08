@@ -8,8 +8,8 @@
 </td>
 <td>
 
-- Bind a ONE physical button to **Google Wallet** **and flashlight** depending on the ambient light
-- Adds *haptic feedback* whenever you double press the top button, so you know when you've successfully triggered the shortcut.
+- Bind a **ONE physical button** to **Google Wallet** **and flashlight** depending on the ambient light
+- Adds **haptic feedback** when launching shortcut so you know when you've successfully triggered the shortcut.
 - Allow TWP3/5 users to bind their Voice Assistant (long-press) shortcut to [Google Assistant Go](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/) [optional]
 
 </td>
