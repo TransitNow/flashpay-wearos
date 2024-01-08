@@ -1,30 +1,45 @@
-# Flashpay for Samsung Galaxy Watches
+# Flashpay for Samsung Galaxy Watches and TicWatch Pro 3/5 users
+- Bind a physical button to Google Wallet and flashlight depending on the ambient light
+- Adds *haptic feedback* whenever you double press the top button, so you know when you've successfully triggered the shortcut.
+- Allow TWP3/5 users to bind their Voice Assistant (long-press) shortcut to [Google Assistant Go](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/) [optional]
 [![Video](https://img.youtube.com/vi/qyKzMmxhpaQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
-- [Watch the video explainer ](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
-- Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/download/v1.0.0/flashpay-wearos-v001.apk)
+- [For Galaxy Watch users](https://www.youtube.com/watch?v=qyKzMmxhpaQ)
+- [For TicWatch Pro 3/5 users](https://youtu.be/lqnD2iWeQBI)
+- Download the Wear OS APK [here](https://github.com/TransitNow/flashpay-wearos/releases/)
 
 ## TLDR
-This app provides Samsung Galaxy Watch 4/5/6 users with a quick method to access Google Wallet, loyalty cards and a flashlight (in dark scenarios) by using the native double-tap shortcut. 
+This app provides Samsung Galaxy Watch 4/5/6 and TicWatch Pro 5/3 users with a quick method to access Google Wallet and a flashlight (in dark scenarios) by using the native double press shortcut or overriding "show recent apps".
 
-## Why don't I just bind the double-tap top button to Google Wallet?
-Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double-tap top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
+## How to setup
+### For Samsung Galaxy Watch 4/5/6 users 
+- Assign this app to the double-press tap feature under Settings -> Advanced -> Customize button -> Double press.
+
+### For TicWatch Pro 3/5 users
+- Press the recent app shortcut (top button for TWP5, bottom button for TWP3), you will be prompted to bind that shortcut to the default recent apps or this app. Select this app. Galaxy Watch users can also use this method to bind the shortcut and save double-press to something else.
+- Long-press the voice shortcut (crown button for TWP5, bottom button for TWP3), if you have multiple voice assistants installed (like Alexa), you will be prompted to select one. Select Google Assistant Go. If you don't have Google Assistant Go 2.8 installed, make sure to [side load it](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/).
+  - Note: I actually prefer to use [Alexa for Wear OS](https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-alexa-for-smart-watches-wear-os/) instead. GAG is a little cumbersome since it was designed for a Phone.
+ 
+
+## How it works
+- When there's ambient light (enough light to see), it opens Google Wallet.
+- When it's dark, it turns on the flashlight.
+- If you're in a dim environment and using the shortcut once incorrectly brings up the flashlight, you can quickly double press again to open Google Wallet.
+- For TWP3/5 users, you will be presented with an option to bind the long-press bottom button to Google Assistant Go (GAG) for a more seamless experience. 
+  - Unfortuantely, you cannot sideload the official Assistant apk for Wear OS.
+
+# Why Samsung Pay sucks (a rant to Galaxy Watch users)
+## Why don't I just bind the double press top button to Google Wallet?
+Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double press top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
 
 ## Why Samsung Pay sucks compared to Google Wallet
 - Samsung Pay requires entering your PIN twice: first to unlock the watch and then to use the payment feature, which can be frustrating if you forget a step. In contrast, Google Wallet simplifies the process by only needing a single unlock, making transactions smoother.
 - The performance of Samsung Pay can be inconsistent, with occasional NFC issues requiring you to reopen the app and retry. On the other hand, Google Wallet offers a more reliable experience with a 100% success rate when tapping on NFC terminal.
-
-## What Flashpay improves on
-- Add *haptic feedback* whenever you double-tap the top button, so you know when you've successfully triggered the shortcut.
-- When there's ambient light (enough light to see), it opens Google Wallet.
-- When it's dark, it turns on the flashlight.
-- Double-tap twice to open your loyalty cards (e.g. Starbucks, Tim Hortons, etc.) via Stocard.
-
+- Google Wallet offers access to loyalty cards (barcodes, QR codes, plane tickets, etc) while Samsung Pay does not.
 
 ## How to install
 ### Wear OS app prerequisites
-Install these apps for this app to operate properly:
-- [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US)
-- [Stocard](https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=en&gl=US) [optional]
+- Install [Google Wallet](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel&hl=en&gl=US) for this app to work properly.
+- [OPTIONAL FOR TWP3/5] Install [Google Assistant Go](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/) for this app to work properly.
 
 ### Option 1: via phone
 - Download the [Wear installer 2](https://www.reddit.com/r/WearOS/comments/u9hf2m/new_app_wear_installer_2_a_free_general_purpose/) app on your phone.
