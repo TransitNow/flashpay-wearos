@@ -2,7 +2,6 @@
 <table>
 <tr>
 <td>
-![flashpayicon](https://github.com/TransitNow/flashpay-wearos/assets/2457368/b3e98c26-a772-4744-9ce4-20dacfbf3f17)
 
 ![2024![flashpayicon](https://github.com/TransitNow/flashpay-wearos/assets/2457368/bc0d1626-5b75-4024-bc83-e3a52b6eb742)
 -01-08 21_17_14-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/96135707-da36-484d-87ac-991b5948b980)
@@ -18,6 +17,7 @@
 </tr>
 </table>
 
+![flashpayicon](https://github.com/TransitNow/flashpay-wearos/assets/2457368/db35cb6f-a0a5-4d97-ac62-5d60b4e795f9)
 
 
 <a href="https://www.youtube.com/watch?v=qyKzMmxhpaQ">
