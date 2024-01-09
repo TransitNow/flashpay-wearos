@@ -3,12 +3,12 @@
 <tr>
 <td>
 
-![image](https://github.com/TransitNow/flashpay-wearos/assets/2457368/f929c520-443a-4539-8c60-f5ff520b0676)
+![2024-01-08 21_17_14-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/96135707-da36-484d-87ac-991b5948b980)
 
 </td>
 <td>
 
-- Bind a **ONE physical button** to **Google Wallet** **and flashlight** depending on the ambient light
+- Bind a **tactile button** to **Google Wallet** **and flashlight** for hands-free access
 - Adds **haptic feedback** when launching shortcut so you know when you've successfully triggered the shortcut.
 - Allow TWP3/5 users to bind their Voice Assistant (long-press) shortcut to [Google Assistant Go](https://www.apkmirror.com/apk/google-inc/google-assistant-go/google-assistant-go-2-8-0-release/) [optional]
 
