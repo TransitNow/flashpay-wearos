@@ -2,9 +2,8 @@
 <table>
 <tr>
 <td>
+![2024-01-08 21_34_30-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/bcbed5a7-f497-4e74-86ff-f0e8711f8b44)
 
-![2024![flashpayicon](https://github.com/TransitNow/flashpay-wearos/assets/2457368/db35cb6f-a0a5-4d97-ac62-5d60b4e795f9)
--01-08 21_17_14-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/db35cb6f-a0a5-4d97-ac62-5d60b4e795f9)
 
 </td>
 <td>
