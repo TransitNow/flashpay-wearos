@@ -3,8 +3,8 @@
 <tr>
 <td>
 
-![2024![flashpayicon]((https://github.com/TransitNow/flashpay-wearos/assets/2457368/bcbed5a7-f497-4e74-86ff-f0e8711f8b44)
--01-08 21_17_14-ChatGPT]((https://github.com/TransitNow/flashpay-wearos/assets/2457368/bcbed5a7-f497-4e74-86ff-f0e8711f8b44)
+![2024![flashpayicon](https://github.com/TransitNow/flashpay-wearos/assets/2457368/bc0d1626-5b75-4024-bc83-e3a52b6eb742)
+-01-08 21_17_14-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/96135707-da36-484d-87ac-991b5948b980)
 </td>
 <td>
 
