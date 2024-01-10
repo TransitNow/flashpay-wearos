@@ -41,3 +41,4 @@ captures/
 *.iml
 *.iws
 *.ipr
+/app/release/output-metadata.json
