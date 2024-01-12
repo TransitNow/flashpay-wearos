@@ -58,10 +58,10 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 ### Option 2: via computer
 See instructions.
 
-## How to uninstall or re-assign the voice shortcut to another app?
-- If you want to re-assign/reset the recent apps shortcut, you will need to uninstall this app. There's no option to easily change the default app for the recent app shortcut (at least w/ TWP3).
-- run `adb uninstall com.jsyntax.nowtap`
-- Uninstall directly on Wear OS watch Settings -> App Info -> Flashpay launcher -> Uninstall or run `adb uninstall com.jsyntax.customvoicelauncher`
+## How to uninstall or re-assign the recent apps shortcut to another app?
+- For Galaxy Watch users, just re-customize your double-tap shortcut.
+- For TWP3/5, if you want to re-assign/reset the recent apps shortcut, you will need to uninstall this app. There's no option to easily change the default app for the recent app shortcut (at least w/ TWP3).
+- Uninstall directly on Wear OS watch Settings -> App Info -> Flashpay launcher -> Uninstall or run `adb uninstall com.jsyntax.nowtap`
 
 
 ## Beta Feedback
