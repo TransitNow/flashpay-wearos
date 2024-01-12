@@ -29,7 +29,6 @@ Some folks recommend Facebook or Messenger (not lite), since Facebook may have d
 Only shows notifications. This isn't so necessary since you can just use the built-in Wear OS notifications.
 - com.facebook.orca_121.0.0.13.70-60338733_minAPI24(nodpi)_apkmirror.com.apk
 
-
 ## Other resources
 https://forum.xda-developers.com/t/official-list-of-sideloaded-apps-and-workarounds-for-wear-os-tested-on-galaxy-watch.4379825/
 

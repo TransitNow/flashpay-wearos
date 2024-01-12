@@ -41,16 +41,6 @@
             android:exported="true"
             android:theme="@style/AppTheme">
         </activity>
-        <activity
-            android:name=".VoiceActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.VOICE_ASSIST" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

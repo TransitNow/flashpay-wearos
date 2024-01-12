@@ -1,0 +1,13 @@
+# How to sideload (instll) apks with ADB on computer
+- Install ADB on your PC or Mac. [Instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/)
+- Download the apk on to your computer.
+- Connect your watch to your computer via USB
+    - Enable developer mode on your watch
+        - Tap 'System' -> 'About'.
+        - Tap 'Build number' 5-7 times until you see a message that you are now a developer.
+    - Go to Settings > Developer Options > ADB Debugging
+    - Enable "wireless debugging" and click "pair new device"
+    - First pair your watch using the `adb pair <ip address:port>` command, enter the pairing code displayed on your watch.
+    - In the future, since you have paired your watch to your computer, you only need to run `adb connect <ip address:port>` to connect to your watch.
+    - Run `adb devices` should show your watch
+- Run `adb install <path to apk>`
