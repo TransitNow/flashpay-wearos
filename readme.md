@@ -61,6 +61,7 @@ See instructions.
 ## How to uninstall or re-assign the voice shortcut to another app?
 - If you want to re-assign/reset the recent apps shortcut, you will need to uninstall this app. There's no option to easily change the default app for the recent app shortcut (at least w/ TWP3).
 - run `adb uninstall com.jsyntax.nowtap`
+- Uninstall directly on Wear OS watch Settings -> App Info -> Flashpay launcher -> Uninstall or run `adb uninstall com.jsyntax.customvoicelauncher`
 
 
 ## Beta Feedback
