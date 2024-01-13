@@ -1,4 +1,4 @@
-# How to sideload (instll) apks with ADB on computer
+# How to sideload (install) apks with ADB on computer
 - Install ADB on your PC or Mac. [Instructions](https://www.xda-developers.com/install-adb-windows-macos-linux/)
 - Download the apk on to your computer.
 - Connect your watch to your computer via USB

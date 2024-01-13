@@ -7,7 +7,7 @@
 -01-08 21_17_14-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/96135707-da36-484d-87ac-991b5948b980)
 </td>
 <td>
-- Bind a <b>tactile button</b> to <b>Google Wallet and <b>flashlight</b> for hands-free access
+- Bind a <b>tactile button</b> to <b>Google Wallet</b> and <b>flashlight</b> for hands-free access
 - Adds <b>haptic feedback</b> when launching shortcut so you know when you've successfully triggered the shortcut
 </td>
 </tr>
