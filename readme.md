@@ -44,10 +44,10 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 
 ### Why Samsung Pay sucks compared to Google Wallet
 
-| Feature | Google Wallet | Samsung Pay |
-| ------- | ------------- | ----------- |
-| Unlocking Process | Single unlock needed for transactions | Requires PIN twice: once to unlock the watch, again for payment |
-| NFC Reliability | High reliability with 100% success rate | Occasional NFC issues, may need to reopen app and retry |
+| Feature | Google Wallet                                         | Samsung Pay |
+| ------- |-------------------------------------------------------| ----------- |
+| Unlocking Process | Single unlock when initially putting on watch         | Requires PIN twice: once to unlock the watch, again for payment |
+| NFC Reliability | High reliability with 100% success rate               | Occasional NFC issues, may need to reopen app and retry |
 | Access to Loyalty Cards & Tickets | Supports loyalty cards, QR codes, plane tickets, etc. | Does not offer access to loyalty cards or similar features |
 
 
