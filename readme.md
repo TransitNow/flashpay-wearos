@@ -7,8 +7,8 @@
 -01-08 21_17_14-ChatGPT](https://github.com/TransitNow/flashpay-wearos/assets/2457368/96135707-da36-484d-87ac-991b5948b980)
 </td>
 <td>
-- Bind a **tactile button** to **Google Wallet** **and flashlight** for hands-free access
-- Adds **haptic feedback** when launching shortcut so you know when you've successfully triggered the shortcut.
+- Bind a <b>tactile button</b> to <b>Google Wallet and <b>flashlight</b> for hands-free access
+- Adds <b>haptic feedback</b> when launching shortcut so you know when you've successfully triggered the shortcut
 </td>
 </tr>
 </table>
@@ -24,7 +24,7 @@
 ## TLDR
 This app provides Samsung Galaxy Watch 4/5/6 and TicWatch Pro 5/3 users with a quick method to access Google Wallet and a flashlight (in dark scenarios) by using the native double press shortcut or overriding "show recent apps".
 
-Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other app](http://todo)
+Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other app](https://github.com/TransitNow/voice-assistant-shortcut-wearos)
 
 ## How to setup
 ### For Samsung Galaxy Watch 4/5/6 users 
@@ -56,7 +56,7 @@ Samsung limits users to only binding the long-press bottom button to Samsung Pay
 - Follow their instructions on how to sideload the Flashpay apk onto your watch.
 
 ### Option 2: via computer
-See instructions.
+See [instructions](https://github.com/TransitNow/flashpay-wearos/blob/main/docs/how-to-sideload-apks-with-adb-on-computer.md).
 
 ## How to uninstall or re-assign the recent apps shortcut to another app?
 - For Galaxy Watch users, just re-customize your double-tap shortcut.
