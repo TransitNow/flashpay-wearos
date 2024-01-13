@@ -25,24 +25,35 @@
 This app provides Samsung Galaxy Watch 4/5/6 and TicWatch Pro 5/3 users with a quick method to access Google Wallet and a flashlight (in dark scenarios) by using the native double press shortcut or overriding "show recent apps".
 
 Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other app](https://github.com/TransitNow/voice-assistant-shortcut-wearos)
-
-## How to setup
-### For Samsung Galaxy Watch 4/5/6 users 
-- Assign this app to the double-press tap feature under Settings -> Advanced -> Customize button -> Double press.
-
-### For TicWatch Pro 3/5 users
-- Press the recent app shortcut (top button for TWP5, bottom button for TWP3), you will be prompted to bind that shortcut to the default recent apps or this app. Select this app.
-
 ## How it works
 - When there's ambient light (enough light to see), it opens Google Wallet.
 - When it's dark, it turns on the flashlight.
 - If you're in a dim environment and using the shortcut once incorrectly brings up the flashlight, you can quickly double press again to open Google Wallet.
+<img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/2465877c-63a2-43ab-b492-f3c494b0c62a" alt="image" width="300"/>
+
+<img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/82ef1e3a-f9bb-476c-8c81-3ac15ed31f5f" alt="image" width="300"/>
+
+
+
+## How to setup
+### For Samsung Galaxy Watch 4/5/6 users 
+- Assign this app to the double-press tap feature under Settings -> Advanced -> Customize button -> Double press.
+<img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/324ab880-2cbb-4c9c-a976-042e5147ec2a" alt="image" width="300"/>
+
+
+### For TicWatch Pro 3/5 users
+- Press the recent app shortcut (top button for TWP5, bottom button for TWP3), you will be prompted to bind that shortcut to the default recent apps or this app. Select this app.
+
+<img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/07901428-a050-4fbe-94f1-7dd9a0668cdf" alt="image" width="300"/>
+
+
+
 
 ## Why Samsung Pay sucks (a rant to Galaxy Watch users)
 ### Why don't I just bind the double press top button to Google Wallet?
 Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double press top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
 
-### Why Samsung Pay sucks compared to Google Wallet
+### Why Google Wallet is better
 
 | Feature | Google Wallet                                         | Samsung Pay |
 | ------- |-------------------------------------------------------| ----------- |
@@ -67,6 +78,8 @@ See [instructions](https://github.com/TransitNow/flashpay-wearos/blob/main/docs/
 - For TWP3/5, if you want to re-assign/reset the recent apps shortcut, you will need to uninstall this app. There's no option to easily change the default app for the recent app shortcut (at least w/ TWP3).
 - Uninstall directly on Wear OS watch Settings -> App Info -> Flashpay launcher -> Uninstall or run `adb uninstall com.jsyntax.nowtap`
 
+## Will you release this on the Google Play Store?
+It depends if Google will approve. Ever since Wear OS 4, Google has imposed strict rules on what Wear OS apps get approved. Since this app is a utility app, it doens't fit in the mold of typical apps. I will update this page if I do release it, but for now, it's quite easy and safe to sideload it.
 
 ## Beta Feedback
 We welcome feedback on the beta version to improve the app. Please reach out with your comments and suggestions. 
