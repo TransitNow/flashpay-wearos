@@ -38,11 +38,11 @@ Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other ap
 - When it's dark, it turns on the flashlight.
 - If you're in a dim environment and using the shortcut once incorrectly brings up the flashlight, you can quickly double press again to open Google Wallet.
 
-# Why Samsung Pay sucks (a rant to Galaxy Watch users)
-## Why don't I just bind the double press top button to Google Wallet?
+## Why Samsung Pay sucks (a rant to Galaxy Watch users)
+### Why don't I just bind the double press top button to Google Wallet?
 Samsung limits users to only binding the long-press bottom button to Samsung Pay, preventing its use with other apps. Sure, you can bind Google Wallet to the double press top button, but then you lose the flexibility to use it for other functions, like activating the flashlight—a feature I find essential at night
 
-## Why Samsung Pay sucks compared to Google Wallet
+### Why Samsung Pay sucks compared to Google Wallet
 - Samsung Pay requires entering your PIN twice: first to unlock the watch and then to use the payment feature, which can be frustrating if you forget a step. In contrast, Google Wallet simplifies the process by only needing a single unlock, making transactions smoother.
 - The performance of Samsung Pay can be inconsistent, with occasional NFC issues requiring you to reopen the app and retry. On the other hand, Google Wallet offers a more reliable experience with a 100% success rate when tapping on NFC terminal.
 - Google Wallet offers access to loyalty cards (barcodes, QR codes, plane tickets, etc) while Samsung Pay does not.
