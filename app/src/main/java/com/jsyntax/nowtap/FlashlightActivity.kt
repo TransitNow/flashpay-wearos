@@ -1,10 +1,12 @@
 package com.jsyntax.nowtap
 
 import android.app.Activity
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.View
 import android.view.WindowManager
 import android.widget.RelativeLayout
 
@@ -16,14 +18,29 @@ class FlashlightActivity : Activity() {
         Log.d("FlashlightActivity", "Runnable executing; finishing activity")
         finish()
     }
-    private val autoOffDelayMillis: Long = 45_000
+    private val autoOffDelayMillis: Long = 300_000
+    
+    private lateinit var layout: RelativeLayout
+    private lateinit var sharedPreferences: SharedPreferences
+    private var isRedMode = false
+    
+    companion object {
+        private const val PREFS_NAME = "FlashlightPreferences"
+        private const val IS_RED_MODE_KEY = "isRedMode"
+        private const val WHITE_COLOR = 0xFFFFFFFF.toInt()
+        private const val RED_COLOR = 0xFFFF0000.toInt()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("FlashlightActivity", "onCreate called")
 
-        val layout = RelativeLayout(this).apply {
-            setBackgroundColor(0xFFFFFFFF.toInt())
+        sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
+        isRedMode = sharedPreferences.getBoolean(IS_RED_MODE_KEY, false)
+
+        layout = RelativeLayout(this).apply {
+            setBackgroundColor(if (isRedMode) RED_COLOR else WHITE_COLOR)
+            setOnClickListener { toggleColor() }
         }
         setContentView(layout)
 
@@ -40,6 +57,18 @@ class FlashlightActivity : Activity() {
         }
 
         handler.postDelayed(autoOffRunnable, autoOffDelayMillis)
+    }
+
+    private fun toggleColor() {
+        isRedMode = !isRedMode
+        layout.setBackgroundColor(if (isRedMode) RED_COLOR else WHITE_COLOR)
+        
+        sharedPreferences.edit().apply {
+            putBoolean(IS_RED_MODE_KEY, isRedMode)
+            apply()
+        }
+        
+        Log.d("FlashlightActivity", "Color toggled to: ${if (isRedMode) "RED" else "WHITE"}")
     }
 
     override fun onPause() {
