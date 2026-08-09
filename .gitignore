@@ -42,3 +42,8 @@ captures/
 *.iws
 *.ipr
 /app/release/output-metadata.json
+# Signing — key material and passwords never enter git
+signing.properties
+*.jks
+*.keystore
+*.p12
