@@ -29,6 +29,20 @@ Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other ap
 - When there's ambient light (enough light to see), it opens Google Wallet.
 - When it's dark, it turns on the flashlight.
 - If you're in a dim environment and using the shortcut once incorrectly brings up the flashlight, you can quickly double press again to open Google Wallet.
+- If Google Wallet isn't installed, you get the menu instead of a blank screen.
+
+### The flashlight's four controls
+The screen becomes the light, and the face splits into four tap targets big enough to hit in the dark without looking. Colour, brightness and timer choices are remembered between uses.
+
+| | Left | Right |
+|---|---|---|
+| **Top** | `WALLET` — leave the light and open Google Wallet | `COLOR` — white, or red to keep your night vision |
+| **Bottom** | `BRIGHT` — five brightness steps | `TIMER` — 30s / 1m / 2m / 4m / 5m before auto-off |
+
+Tapping `TIMER` restarts the countdown from whichever duration you land on, so you can extend the light without leaving it. Only that quadrant resets the timer — dimming the light at 4:59 elapsed still lets it expire a second later.
+
+### Tapping the app icon
+The icon opens a small menu (Flashlight / Google Wallet), so both are reachable without binding a button to anything.
 <img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/2465877c-63a2-43ab-b492-f3c494b0c62a" alt="image" width="300"/>
 
 <img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/82ef1e3a-f9bb-476c-8c81-3ac15ed31f5f" alt="image" width="300"/>
@@ -37,7 +51,8 @@ Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other ap
 
 ## How to setup
 ### For Samsung Galaxy Watch 4/5/6 users 
-- Assign this app to the double-press tap feature under Settings -> Advanced -> Customize button -> Double press.
+- Assign **"Flashpay Instant"** to the double-press tap feature under Settings -> Advanced -> Customize button -> Double press.
+- Pick `Flashpay Instant`, **not** `Flashpay`. Samsung's button picker lists launcher entries, and plain `Flashpay` is the menu — binding that would cost you the one-press speed the app is for. `Flashpay Instant` is the trampoline that decides and acts in one frame.
 <img src="https://github.com/TransitNow/flashpay-wearos/assets/2457368/324ab880-2cbb-4c9c-a976-042e5147ec2a" alt="image" width="300"/>
 
 
@@ -76,10 +91,14 @@ See [instructions](https://github.com/TransitNow/flashpay-wearos/blob/main/docs/
 ## How to uninstall or re-assign the recent apps shortcut to another app?
 - For Galaxy Watch users, just re-customize your double-tap shortcut.
 - For TWP3/5, if you want to re-assign/reset the recent apps shortcut, you will need to uninstall this app. There's no option to easily change the default app for the recent app shortcut (at least w/ TWP3).
-- Uninstall directly on Wear OS watch Settings -> App Info -> Flashpay launcher -> Uninstall or run `adb uninstall com.jsyntax.nowtap`
+- Uninstall directly on Wear OS watch Settings -> App Info -> Flashpay -> Uninstall or run `adb uninstall com.jsyntax.nowtap`
 
 ## Will you release this on the Google Play Store?
-It depends if Google will approve. Ever since Wear OS 4, Google has imposed strict rules on what Wear OS apps get approved. Since this app is a utility app, it doens't fit in the mold of typical apps. I will update this page if I do release it, but for now, it's quite easy and safe to sideload it.
+**Submitted 9 August 2026** — v1.1.0 is in review for the Wear OS form factor. Wear verdicts take anywhere from one to eight days; this page will say so when it's live.
+
+Sideloading stays supported either way. The Play build and the APKs on the [releases page](https://github.com/TransitNow/flashpay-wearos/releases/) are signed with the same certificate, so you can move between the two without uninstalling.
+
+Note for anyone still on v1.0.5 or earlier: those were signed with a key that has since been lost, so you'll need to uninstall before installing v1.0.6+. That break is one-time.
 
 ## Beta Feedback
 We welcome feedback on the beta version to improve the app. Please reach out with your comments and suggestions. 
