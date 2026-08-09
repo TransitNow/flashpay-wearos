@@ -24,11 +24,7 @@ class MainActivity : Activity() {
     private lateinit var vibrator: Vibrator
 
     companion object {
-        // ***********************
-        // UPDATE THESE TO YOUR APPS
-        // REBUILD APK and INSTALL if you want to customize
-        private const val WALLET_PACKAGE = "com.google.android.apps.walletnfcrel"
-        // ***********************
+        // WALLET_PACKAGE lives in AppLauncher.kt — update it there to point at a different app.
 
         private var LUX_THRESHOLD: Float = 0f // near pitch black, above 10 is dim but not a situation where you'd use a flashlight, 20 is quite bright
         private const val TAPPED_TWICE_THRESHOLD_MILLISECONDS: Long = 3000 // the time between the user invoking this shortcut and the next time they can invoke it again
@@ -118,8 +114,15 @@ class MainActivity : Activity() {
     private fun launchWallet() {
         val (sharedPreferences) = getLastTapTimeAndAction()
         Log.d(TAG, "opening wallet")
-        _launchAppWithCheck(WALLET_PACKAGE)
+        val launched = launchApp(WALLET_PACKAGE)
         updateLastTapAndAction(sharedPreferences, System.currentTimeMillis(), ACTION_WALLET)
+        if (!launched) {
+            // Wallet is not installed. This activity is translucent and holds no content, so
+            // finishing on its own would read as a blank screen that never goes away — the state a
+            // Play reviewer on a watch without Wallet would land in. Show the menu instead.
+            startActivity(Intent(this, MenuActivity::class.java))
+        }
+        finish()
     }
 
     private fun updateLastTapAndAction(sharedPreferences: SharedPreferences, lastTapTime: Long, lastAction: String) {
@@ -136,17 +139,5 @@ class MainActivity : Activity() {
         val lastAction = sharedPreferences.getString(LAST_ACTION_KEY, "unknown") ?: "unknown"
 
         return Triple(sharedPreferences, lastTapTime, lastAction)
-    }
-
-    private fun Context._launchAppWithCheck(packageName: String) {
-        val launchIntent = packageManager.getLaunchIntentForPackage(packageName)
-        if (launchIntent != null) {
-            startActivity(launchIntent)
-            Log.d(TAG, "Launching app: $packageName")
-            finish()
-        } else {
-            Log.d(TAG, "App cannot be launched: $packageName")
-            Toast.makeText(this, "App not found: $packageName", Toast.LENGTH_LONG).show()
-        }
     }
 }

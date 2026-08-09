@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">Flashpay launcher</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
-    <string name="main_title">Welcome to Flashpay! There was a problem, please read instructions.</string>
+    <string name="app_name">Flashpay</string>
+    <!-- Second launcher entry pointing straight at the trampoline. Galaxy Watch's "Customize
+         button" picker lists launcher activities, so the instant path needs its own entry there
+         or binding the double-press would open the menu instead of acting. -->
+    <string name="instant_label">Flashpay Instant</string>
+
+    <string name="menu_flashlight">Flashlight</string>
+    <string name="menu_wallet">Google Wallet</string>
 </resources>

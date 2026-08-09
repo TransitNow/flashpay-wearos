@@ -47,3 +47,8 @@ signing.properties
 *.jks
 *.keystore
 *.p12
+
+# Signed bundles are build output — the Play release is the source of truth
+*.aab
+# Intermediate screencap frames; scripts/process-shots.py regenerates the Play-ready pair
+play-assets/screenshots/raw-*.png

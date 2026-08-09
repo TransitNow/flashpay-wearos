@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-    >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-feature android:name="android.hardware.type.watch" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <queries>
         <package android:name="com.google.android.apps.walletnfcrel" />
     </queries>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
+
         <uses-library
             android:name="com.google.android.wearable"
             android:required="true" />
@@ -21,26 +23,50 @@
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
 
+        <!-- The icon in the app list. A tap here shows the menu. -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/MenuTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- The trampoline: decides and acts in one frame, with no UI of its own.
+             ALL_APPS is what TicWatch Pro 3/5 binds its recent-apps button to. -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
                 <action android:name="android.intent.action.ALL_APPS" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
+
+        <!-- Galaxy Watch's "Customize button" enumerates launcher activities, so the instant path
+             needs a launcher entry of its own; without it, binding the double-press would land on
+             the menu and lose the one-press speed the app is for. -->
+        <activity-alias
+            android:name=".InstantLauncher"
+            android:exported="true"
+            android:label="@string/instant_label"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
         <activity
             android:name=".FlashlightActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:exported="false"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

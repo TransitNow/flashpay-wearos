@@ -11,15 +11,15 @@ if (signingPropsFile.exists()) {
 
 android {
     namespace 'com.jsyntax.nowtap'
-    compileSdk 33
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.jsyntax.nowtap"
         minSdk 28
-        targetSdk 33
-        versionCode 3
-        versionName "1.0.6"
-
+        // Play requires a current target API for new Wear submissions; 33 is rejected outright.
+        targetSdk 36
+        versionCode 4
+        versionName "1.1.0"
     }
 
     signingConfigs {
@@ -40,16 +40,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    buildFeatures {
-        viewBinding true
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
     }
 }
 
+// No dependencies on purpose. Every screen is built from framework views, so the app carries no
+// androidx or Play Services code at all — which is also why it starts as fast as it does.
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'com.google.android.gms:play-services-wearable:18.1.0'
-    implementation 'androidx.percentlayout:percentlayout:1.0.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.wear:wear:1.3.0'
 }
