@@ -1,0 +1,22 @@
+<resources>
+    <!--
+      Branded launch (Wear App Quality: the app must show its icon on a black background while
+      starting). Play rejected sister app gym-watch-tracker for missing this on 2026-08-10.
+
+      Declared, not installed: the platform SplashScreen reads these two theme attributes directly
+      from API 31, so this needs no androidx.core:core-splashscreen and no installSplashScreen()
+      call. That matters here — this app deliberately carries *zero* dependencies, which is a large
+      part of why it starts as fast as it does, and a library pulled in for a splash screen would
+      cost exactly the thing the app is for. Hence values-v31 rather than the compat route; watches
+      below API 31 simply get the old launch, which is the trade this app should make.
+
+      Only MenuTheme gets this. MainActivity is the hardware-button trampoline that decides and acts
+      in one frame under a translucent theme — putting a splash in front of it would defeat the
+      whole point of the app — and it is reachable as a launcher entry only through the
+      .InstantLauncher alias, whose label says as much.
+    -->
+    <style name="MenuTheme" parent="MenuThemeBase">
+        <item name="android:windowSplashScreenBackground">@android:color/black</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_icon</item>
+    </style>
+</resources>

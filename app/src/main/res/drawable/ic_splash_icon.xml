@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The branded-launch icon: the launcher icon, inset to the adaptive-icon safe zone.
+
+  The splash slot scales the whole drawable canvas (~68dp on a 192dp watch) and, like an adaptive
+  icon, treats the central two thirds as the visible area. @mipmap/ic_launcher is a full-bleed
+  square, so handed over directly it would be blown up to the full 68dp — well past the 48x48dp
+  Play asks for. Insetting each edge by 1/6 leaves exactly two thirds, landing it near 45dp.
+
+  See the wear-os-guidelines skill, branded-launch.md.
+-->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@mipmap/ic_launcher"
+    android:inset="16.7%" />
