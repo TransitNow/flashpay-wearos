@@ -18,8 +18,8 @@ android {
         minSdk 28
         // Play requires a current target API for new Wear submissions; 33 is rejected outright.
         targetSdk 36
-        versionCode 4
-        versionName "1.1.0"
+        versionCode 5
+        versionName "1.1.1"
     }
 
     signingConfigs {
