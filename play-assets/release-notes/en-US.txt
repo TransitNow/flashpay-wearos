@@ -1,0 +1,2 @@
+- Fixed: on some newer watches, a press in a very dark room opened Wallet instead of the flashlight.
+- Steadier light detection right after the screen wakes.

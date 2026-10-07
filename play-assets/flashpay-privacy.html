@@ -17,7 +17,7 @@
 <body>
 
 <h1>Privacy Policy — Flashpay</h1>
-<p class="updated">Last updated 9 August 2026</p>
+<p class="updated">Last updated 6 October 2026</p>
 
 <p>Flashpay is a Wear OS app that turns your watch screen into a flashlight and can open your
 wallet app from a hardware button. This policy covers the Flashpay app, package
@@ -36,9 +36,11 @@ leaves your watch because there is no way for it to do so.</p>
 that confirms the shortcut fired.</p>
 
 <h2>Sensors</h2>
-<p>Flashpay reads the watch's ambient light sensor once, at the moment you press the button, purely
-to decide whether to open the flashlight or your wallet app. The reading is used immediately and
-then discarded. It is never stored and never transmitted.</p>
+<p>Flashpay listens to the watch's ambient light sensor for at most a fraction of a second when you
+press the button, purely to decide whether to open the flashlight or your wallet app, and stops as
+soon as it has decided. So that a wrong choice can be diagnosed, each press is noted in a small,
+size-capped diagnostic log in the app's storage on the watch (time, light readings, the choice and
+why, watch model and sensor type). It is never transmitted and is removed when you uninstall.</p>
 
 <h2>Data stored on your watch</h2>
 <p>Flashpay saves your preferences — flashlight colour, brightness step, timer length, and the time

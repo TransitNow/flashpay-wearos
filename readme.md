@@ -30,6 +30,17 @@ Want to bring back **Google Assistant** for TWP3/5 users? Check out [my other ap
 - When it's dark, it turns on the flashlight.
 - If you're in a dim environment and using the shortcut once incorrectly brings up the flashlight, you can quickly double press again to open Google Wallet.
 - If Google Wallet isn't installed, you get the menu instead of a blank screen.
+- "Dark" means 5 lux or less. It was 0 until 1.1.2, which some newer watches never read even in a pitch-black room.
+
+### Diagnosing a wrong choice
+Every press is logged on the watch (light readings, what opened and why, watch model, sensor type). Nothing leaves the watch; pull it over ADB:
+
+```
+adb pull /sdcard/Android/data/com.jsyntax.nowtap/files/decisions.jsonl
+adb logcat -s NowTap     # the same lines, live
+```
+
+Each line's `samples` is `[ms after the press, lux, sample age ms]`. A dark room reading steadily above 5 means the threshold is too low for that sensor; a large age on a bright first sample means the system handed over a stale cached reading.
 
 ### The flashlight's four controls
 The screen becomes the light, and the face splits into four tap targets big enough to hit in the dark without looking. Colour, brightness and timer choices are remembered between uses.
